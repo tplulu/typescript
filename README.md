@@ -44,3 +44,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+L'api n'ayant pas marché et tombant en panne régulièrement j'ai fait la partie favoris et détail d'un vol à l'aveugle en essayant d'utiliser mes propres exemples. j'ai placé des images au cas ou dans le dossier src/images/ au cas ou l'api ne marche plus.
