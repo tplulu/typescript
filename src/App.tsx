@@ -6,17 +6,17 @@ import Aeroport from './components/Aeroport';
 import Vol from './components/Vol';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Detailvol from './components/Detailvol';
+import Favoris_fly from './components/Favoris_fly';
 function App() {
   return (
     <div className="App">
       <Menu></Menu>
       
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
         <Routes>
             <Route path="/" element={<Aeroport />} />
             <Route path="/findfly" element={<Vol />} />
+            <Route path="/favoris" element={<Favoris_fly />} />
             <Route path="/findfly/detail" element={<Detailvol />} />
         </Routes>
       </header>

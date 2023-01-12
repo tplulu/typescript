@@ -27,7 +27,13 @@ const Vol = () => {
         console.log(vols)
         navigate('detail');
     }
+    const addfavoris =(vol_a_ajouter : vol) =>{
+        var vol_fav: vol[] = JSON.parse(localStorage.getItem("joke") || "[]");
+        vol_fav.push(vol_a_ajouter)
+        localStorage.setItem("favoris", JSON.stringify(vol_fav))
     
+    }
+
     const getfly = async (e: React.FormEvent<HTMLFormElement>) => {
         var depard_month = startDate.getUTCMonth() + 1; //months from 1-12
         var depard_day = startDate.getUTCDate();
@@ -74,8 +80,8 @@ const Vol = () => {
             params: {
                 origin: origin,
                 destination: destination,
-                date: 'depard_date',
-                returnDate: retour_date,
+                date: '2023-01-13',
+                returnDate: '2023-01-14',
             },
             headers: {
               'X-RapidAPI-Key': 'c2a4b54320msh39c2bd408379f9bp100c21jsnd83fb8c8efcf',

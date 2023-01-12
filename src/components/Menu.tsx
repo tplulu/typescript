@@ -13,6 +13,9 @@ const Menu = () => {
                         <li className="nav-item">
                             <Link to="/findfly" className="nav-link">Trouver un vol</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link to="/favoris" className="nav-link">Favoris</Link>
+                        </li>
                     </ul>
                </nav> 
         </div>
